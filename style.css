@@ -1490,6 +1490,10 @@ body.modal-open {
         width: 200px;
     }
 
+    .footer-logo img{
+        height: 44px;
+    }
+
     .footer-description {
         max-width: 100%;
     }
