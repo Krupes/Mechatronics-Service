@@ -16,6 +16,11 @@
     src: url("fonts/Inter-VariableFont.ttf");
 }
 
+@font-face {
+    font-family: 'Monserrat';
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+}
+
 /* ════════════════════════════════════════
    CSS VARIABLES
 ════════════════════════════════════════ */
@@ -518,6 +523,7 @@ hr.gradient {
     font-weight: 500;
     line-height: 1.6;
     text-align: justify;
+
 }
 .us-left hr{
     margin: 26px 0;
@@ -528,6 +534,7 @@ hr.gradient {
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
+    font-family: 'Monserrat' , sans-serif;
 }
 
 .us-advantages {
@@ -545,7 +552,7 @@ hr.gradient {
     border: 1px solid var(--blue-border);
     border-radius: 12px;
     background: #f0f7ff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--text-strong);
     transition: border-color var(--transition), background var(--transition);
