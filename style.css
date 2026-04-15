@@ -305,7 +305,9 @@ hr.gradient {
 #contact {
     scroll-margin-top: 100px;
 }
-
+#choose{
+    scroll-margin-top: 100px;
+}
 .about-container {
     width: 100%;
     max-width: 1200px;
@@ -342,19 +344,24 @@ hr.gradient {
 }
 
 .main-title-1 {
-    font-size: clamp(24px, 3.5vw, 39px);
+    font-size: clamp(24px, 3.5vw, 38px);
     line-height: 1.1;
     color: var(--blue-dark);
     margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+
 }
 .main-title-1 span{
     color: #003876;
+    margin-top: 5px;
 }
 
 .main-title-2 {
-    font-size: clamp(20px, 3vw, 36px);
+    font-size: clamp(20px, 3vw, 34px);
     line-height: 1.15;
     color: var(--blue-main);
+    margin-top: 5px;
 }
 
 .info-title {
