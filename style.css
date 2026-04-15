@@ -1088,8 +1088,8 @@ textarea {
 }
 .dialog-politics-container {
     display: block;
-    width: 70%;
-    height: 90%;
+    width: 85%;
+    height: 100%;
 
 
 
@@ -1124,6 +1124,9 @@ body.modal-open {
 }
 .dialog-politics-container h1{
     margin: 15px auto;
+}
+.politics-text{
+    margin-bottom: 15px;
 }
 
 /* ════════════════════════════════════════
