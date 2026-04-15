@@ -342,10 +342,13 @@ hr.gradient {
 }
 
 .main-title-1 {
-    font-size: clamp(24px, 3.5vw, 44px);
+    font-size: clamp(24px, 3.5vw, 39px);
     line-height: 1.1;
     color: var(--blue-dark);
     margin-bottom: 12px;
+}
+.main-title-1 span{
+    color: #003876;
 }
 
 .main-title-2 {
