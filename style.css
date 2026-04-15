@@ -684,45 +684,67 @@ hr.gradient {
 }
 
 .choose-item {
+    /*background: white;*/
+    /*border: 1.5px solid var(--blue-border);*/
+    /*border-radius: 16px;*/
+    /*padding: 24px 20px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);*/
     background: white;
-    border: 1.5px solid var(--blue-border);
+    border: 1.5px solid #e8f0fe;
     border-radius: 16px;
-    padding: 24px 20px;
+    padding: 28px 22px;
     display: flex;
     flex-direction: column;
-    transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    align-items: center;
+    text-align: center;
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    cursor: default;
 }
 
 .choose-item:hover {
     border-color: #93c5fd;
     box-shadow: 0 8px 24px rgba(21, 101, 192, 0.1);
     transform: translateY(-3px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 18%, rgba(11, 86, 164, 0.05) 100%);
+    color: #0a1628;
 }
 
 .choose-item-icon {
-    width: 46px;
-    height: 46px;
-    background: var(--blue-light);
-    border-radius: 12px;
+    /*width: 46px;*/
+    /*height: 46px;*/
+    /*background: var(--blue-light);*/
+    /*border-radius: 12px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(13, 71, 161, 0.35);
 }
 
 .choose-item-icon svg {
-    stroke: var(--blue-main);
+    stroke: white;
 }
 
 .choose-item-title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #0a3d8f;
-    margin-top: 14px;
+    margin: 14px 0 8px 0;
     line-height: 1.3;
+
 }
 
 .choose-item-info {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-muted);
     margin-top: 6px;
     line-height: 1.6;
