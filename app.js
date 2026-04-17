@@ -22,3 +22,25 @@ dialogPoliticsClose.addEventListener('click', (e) => {
     dialogPolitics .classList.toggle('politics-open');
     document.body.classList.toggle('modal-open');
 })
+Carousel(
+    document.getElementById("myCarousel"),
+    {
+        Autoplay: {
+            autoStart: true,
+            timeout: 6000,
+            showProgressbar: false,
+            pauseOnHover: false,
+        },
+        setTransform: (_ref, slide, state) => {
+            if (slide.el) {
+                slide.el.style.opacity = `${1 - Math.abs(state.xPercent) / 100 || 0}`;
+            }
+        },
+    },
+    {
+        Arrows,
+        Dots,
+        Autoplay,
+        Lazyload,
+    },
+).init();
