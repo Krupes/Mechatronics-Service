@@ -138,7 +138,7 @@ hr.gradient {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #0071bc, #0071bc);
     color: white;
     box-shadow: 0 4px 16px rgba(13, 71, 161, 0.4);
 }
@@ -667,7 +667,7 @@ hr.gradient {
 .service-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #0071bc, #0071bc);
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -815,21 +815,52 @@ hr.gradient {
     display: block;
 }
 
-.gallery-img-span {
+
+.gallery-img-text{
+    font-size: 19px;
     position: absolute;
     inset: 3px;
-    background: #126db0;
-    opacity: 0.4;
-    transition: opacity 0.3s ease-in-out;
-    transition-delay: 0.8s;
+    background: rgba(0, 113, 188, 0.3);
     border-radius: 13px;
-    pointer-events: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid white;
+    outline-offset: -13px;
+    padding: 10px;
+    z-index: 100;
+    color: white;
+    font-weight: 200;
 }
+.gallery-img-text::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0071bc;
+    width: 20%;
+    height: 35%;
+}
+ .choose-gallery-item:nth-child(1) .gallery-img-text::before {
+     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>');
 
-.choose-gallery-item:hover .gallery-img-span {
-    opacity: 0;
-    transition: opacity 0.08s ease-in-out;
 
+ }
+.choose-gallery-item:nth-child(2) .gallery-img-text::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>');
+
+}
+.choose-gallery-item:nth-child(3) .gallery-img-text::before {
+    content: "#";
+
+}
+.choose-gallery-item:nth-child(4) .gallery-img-text::before {
+    content: "#";
 }
 
 /* ════════════════════════════════════════
@@ -1012,7 +1043,7 @@ textarea {
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #0071bc, #0071bc);
     color: white;
     border: none;
     border-radius: 12px;
@@ -1447,7 +1478,7 @@ body.modal-open {
         left: 0;
         right: 0;
         flex-direction: column;
-        background: linear-gradient(135deg, #0b56a4, #0a3d7a);
+        background: linear-gradient(135deg, #0071bc, #0071bc);
         border-radius: 16px;
         padding: 16px;
         gap: 4px;
